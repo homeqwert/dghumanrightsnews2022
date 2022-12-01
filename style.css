@@ -1,0 +1,237 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Pretendard', monospace;
+  font-size: 1.85rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+section {
+  padding: 6rem 0;
+  border-bottom: 2px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+label::before {
+  display: inline-block;
+  margin: 0 0.7ch;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  color: #fc6e51;
+}
+
+input[type='checkbox'] + label::before {
+  font: var(--fa-font-regular);
+  content: '\f0c8';
+}
+
+input[type='checkbox']:checked + label::before {
+  content: '\f14a';
+}
+
+label {
+  cursor: pointer;
+}
+
+.introduce h1 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  word-break: keep-all;
+  font-size: 5.3rem;
+}
+
+.introduce__detail {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.introduce__detail > p {
+  margin: 2ch auto;
+}
+
+.introduce__detail > p:last-of-type {
+  margin-bottom: 1ch;
+}
+
+.introduce__criterion {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.introduce__criterion h3 {
+  padding-bottom: 0.2ch;
+  display: inline-block;
+  border-bottom: 2px solid black;
+}
+
+.introduce__criterion ol {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.introduce__criterion li {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.introduce__contact {
+  text-align: center;
+  margin-bottom: 1.3ch;
+}
+
+.introduce__group {
+  text-align: center;
+}
+
+.introduce__group > p {
+  font-size: 1.6rem;
+  word-break: keep-all;
+}
+
+.humanrightsnews-promotions,
+.humanrightsnews-candidates {
+  text-align: center;
+}
+
+.humanrightsnews-promotions > h2,
+.humanrightsnews-candidates > h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.humanrightsnews-promotions > h2::after,
+.humanrightsnews-candidates h2::after {
+  content: '|';
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
+.news__number {
+  margin-left: 0.2rem;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.humanrightsnews-promotions > ul,
+.humanrightsnews-candidates > form {
+  text-align: justify;
+  width: 85%;
+}
+
+.humanrightsnews-promotions > ul {
+  margin: 2ch auto;
+}
+
+.humanrightsnews-candidates > form {
+  margin: 0 auto;
+}
+
+.humanrightsnews-candidates fieldset {
+  margin-top: 1.6ch;
+  border: none;
+}
+
+.humanrightsnews-candidates fieldset:first-of-type {
+  margin-top: 0.5ch;
+}
+
+.humanrightsnews-candidates legend {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fc6e51;
+  padding: 0.7ch;
+}
+
+.accordion__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+}
+
+li.accordion__section {
+  padding: 0.5ch 1.6ch;
+}
+
+:not(li).accordion__section {
+  padding: 0.5ch 0.4ch;
+}
+
+.accordion__label {
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.accordion__section:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.accordion__expand-button {
+  margin: 4px;
+  padding: 0.6ch;
+  background-color: #fc6e51;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.accordion__expand-button:hover {
+  transition: background-color 0.2s;
+  background-color: white;
+  color: #fc6e51;
+  outline: 1px solid #fc6e51;
+}
+
+.accordion__section > p[aria-hidden='true'] {
+  display: none;
+}
+
+.accordion__section > p[aria-hidden='false'] {
+  max-height: 999px;
+  padding: 1ch 2ch;
+}
+
+.count-check {
+  margin-top: 1.5ch;
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}
+
+input[type='submit'] {
+  margin: 1ch auto;
+  display: block;
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 0.5ch 0.8ch;
+}
