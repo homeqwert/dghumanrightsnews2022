@@ -169,6 +169,12 @@ label {
   padding: 0.7ch;
 }
 
+.survey-tip {
+  margin: 0 auto;
+  width: 50%;
+  padding: 1rem 0;
+}
+
 .accordion__section {
   display: flex;
   justify-content: space-between;
@@ -234,4 +240,9 @@ input[type='submit'] {
   text-align: center;
   font-size: 2.3rem;
   padding: 0.5ch 0.8ch;
+}
+
+.highright {
+  font-weight: 700;
+  color: #fc6e51;
 }
