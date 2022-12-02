@@ -23,6 +23,12 @@ button {
   font: inherit;
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 section {
   padding: 6rem 0;
   border-bottom: 2px solid black;
@@ -142,6 +148,7 @@ label {
 .humanrightsnews-candidates > form {
   text-align: justify;
   width: 85%;
+  max-width: 800px;
 }
 
 .humanrightsnews-promotions > ul {
@@ -172,12 +179,13 @@ label {
 .survey-tip {
   margin: 0 auto;
   width: 50%;
+  max-width: 480px;
   padding: 1rem 0;
 }
 
 .accordion__section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   border-top: 1px solid black;
